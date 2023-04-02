@@ -1,16 +1,17 @@
-class Port{
-    constructor (name) {
-        this.name = name
-        this.ships = []
-    }
-    addShip(ship){
-        this.ships.push(ship)
+class Port {
+  constructor(name) {
+    this.name = name;
+    this.ships = [];
+  }
 
-    }
-    removeShip(ship){
-        const index = this.ships.indexOf(ship)
-        this.ships.splice(index, 1)
-    }
+  addShip(ship) {
+    this.ships.push(ship);
+  }
+
+  removeShip(ship) {
+    const index = this.ships.indexOf(ship);
+    this.ships.splice(index, 1);
+  }
 }
 
-module.exports = Port
+module.exports = Port;
